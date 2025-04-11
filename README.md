@@ -49,9 +49,19 @@ curl "http://localhost:5000/predict_engagement?W=1&X=20"
 Expected output:
 ```json
 {
+  "alpha": 95.97,
+  "tau (ATE)": -9.11,
+  "beta": 1.51,
+  "p_value_tau": 0.00036
+}
+```
+
+Example prediction response:
+```json
+{
   "W": 1.0,
   "X": 20.0,
-  "predicted_engagement_Y": 117.07
+  "predicted_engagement_Y": 117.16
 }
 ```
 
