@@ -1,14 +1,5 @@
 Question 1:
 
-### a) Linear Regression Estimation of Parameters
-We used `scikit-learn`'s `LinearRegression` to estimate the parameters of the model:
-Yᵢ = α + τ·Wᵢ + β·Xᵢ + εᵢ
-
-The API route `/estimate_ate` fits this model to the provided dataset and returns the estimates:
-- Intercept (α)
-- Treatment effect (τ, the Average Treatment Effect)
-- Coefficient of sustainability spending (β)
-
 ### b) Estimated ATE (τ̂) and Statistical Significance
 The API computes the standard error and p-value of τ̂ using residual variance and the inverse of the design matrix. 
 These values are returned in the JSON response and logged to `output.txt`. 
