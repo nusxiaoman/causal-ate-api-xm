@@ -1,0 +1,30 @@
+Question 1:
+
+### a) Linear Regression Estimation of Parameters
+We used `scikit-learn`'s `LinearRegression` to estimate the parameters of the model:
+Yᵢ = α + τ·Wᵢ + β·Xᵢ + εᵢ
+
+The API route `/estimate_ate` fits this model to the provided dataset and returns the estimates:
+- Intercept (α)
+- Treatment effect (τ, the Average Treatment Effect)
+- Coefficient of sustainability spending (β)
+
+### b) Estimated ATE (τ̂) and Statistical Significance
+The API computes the standard error and p-value of τ̂ using residual variance and the inverse of the design matrix. These values are returned in the JSON response and logged to `output.txt`. For example, τ̂ = -9.11 with p ≈ 0.00036, indicating a statistically significant treatment effect.
+
+### c) Assumptions for Causal Interpretation of τ̂
+For τ̂ to be interpreted causally, the Rubin Causal Model requires:
+1. **Unconfoundedness**: Treatment is independent of potential outcomes, given observed covariates (e.g., sustainability spending).
+2. **Overlap (Positivity)**: Each unit has a nonzero probability of receiving either treatment.
+3. **SUTVA**: No interference between units and a single version of the treatment.
+
+---
+
+Question 2:
+
+This application consists of modular, reproducible components:
+
+- **`app.py`** defines a Flask API with endpoints to train a linear regression model (`/estimate_ate`) and make predictions (`/predict_engagement`). It computes and returns model parameters and the statistical significance of ATE.
+- **`requirements.txt`** specifies all required Python packages, ensuring consistent environment setup.
+- **`Dockerfile`** containerizes the entire application to run consistently across machines.
+- **Containerization** improves reproducibility by isolating the environment from local dependencies, allowing seamless execution on any Docker-enabled platform.
