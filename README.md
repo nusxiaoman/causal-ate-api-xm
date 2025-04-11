@@ -59,8 +59,15 @@ Expected output:
 
 ## 🦜 Component Explanations
 
+This project is composed of modular components that together deliver a robust and reproducible machine learning API:
+
+- **`app.py`** implements the Flask web API. It provides two main routes: `/estimate_ate` trains a linear regression model using input JSON data, and `/predict_engagement` loads the trained model to predict engagement scores based on user inputs.
+- **`requirements.txt`** defines the Python package dependencies required to run the app, ensuring consistent environments across development and deployment.
+- **`Dockerfile`** containerizes the application, bundling the source code, dependencies, and runtime into a single image that can be reliably run anywhere.
+- **Containerization** improves reproducibility by eliminating differences in environments — the app runs identically across all systems that support Docker.
+
 - **`app.py`**: Hosts the Flask API with `/estimate_ate` for model training and `/predict_engagement` for real-time predictions.
-- **`requirements.txt`**: Lists required Python libraries including `scikit-learn`, `pandas`, `joblib`, and `flask`.
+- **`requirements.txt`**: Lists required Python libraries including `scikit-learn`, `pandas`, `joblib`, `scipy`, and `flask`.
 - **`Dockerfile`**: Builds a consistent container environment for training and inference.
 - **Containerization**: Ensures reproducibility and compatibility across systems without local setup.
 
@@ -76,5 +83,3 @@ Expected output:
   {"Unit": 20, "Engagement_Score_Y": 128, "Treatment_W": 1, "Sustainability_Spending_X": 22.8}
 ]
 ```
-
----
