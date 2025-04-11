@@ -1,0 +1,22 @@
+[
+  {"Unit": 1, "Engagement_Score_Y": 137, "Treatment_W": 0, "Sustainability_Spending_X": 19.8},
+  {"Unit": 2, "Engagement_Score_Y": 118, "Treatment_W": 1, "Sustainability_Spending_X": 23.4},
+  {"Unit": 3, "Engagement_Score_Y": 124, "Treatment_W": 1, "Sustainability_Spending_X": 27.7},
+  {"Unit": 4, "Engagement_Score_Y": 124, "Treatment_W": 1, "Sustainability_Spending_X": 24.6},
+  {"Unit": 5, "Engagement_Score_Y": 120, "Treatment_W": 0, "Sustainability_Spending_X": 21.5},
+  {"Unit": 6, "Engagement_Score_Y": 129, "Treatment_W": 1, "Sustainability_Spending_X": 25.1},
+  {"Unit": 7, "Engagement_Score_Y": 122, "Treatment_W": 1, "Sustainability_Spending_X": 22.4},
+  {"Unit": 8, "Engagement_Score_Y": 142, "Treatment_W": 0, "Sustainability_Spending_X": 29.3},
+  {"Unit": 9, "Engagement_Score_Y": 128, "Treatment_W": 0, "Sustainability_Spending_X": 20.8},
+  {"Unit": 10, "Engagement_Score_Y": 114, "Treatment_W": 1, "Sustainability_Spending_X": 20.2},
+  {"Unit": 11, "Engagement_Score_Y": 132, "Treatment_W": 1, "Sustainability_Spending_X": 27.3},
+  {"Unit": 12, "Engagement_Score_Y": 130, "Treatment_W": 0, "Sustainability_Spending_X": 24.5},
+  {"Unit": 13, "Engagement_Score_Y": 130, "Treatment_W": 0, "Sustainability_Spending_X": 22.9},
+  {"Unit": 14, "Engagement_Score_Y": 112, "Treatment_W": 1, "Sustainability_Spending_X": 18.4},
+  {"Unit": 15, "Engagement_Score_Y": 132, "Treatment_W": 0, "Sustainability_Spending_X": 24.2},
+  {"Unit": 16, "Engagement_Score_Y": 117, "Treatment_W": 1, "Sustainability_Spending_X": 21.0},
+  {"Unit": 17, "Engagement_Score_Y": 134, "Treatment_W": 0, "Sustainability_Spending_X": 25.9},
+  {"Unit": 18, "Engagement_Score_Y": 132, "Treatment_W": 0, "Sustainability_Spending_X": 23.2},
+  {"Unit": 19, "Engagement_Score_Y": 121, "Treatment_W": 1, "Sustainability_Spending_X": 21.6},
+  {"Unit": 20, "Engagement_Score_Y": 128, "Treatment_W": 1, "Sustainability_Spending_X": 22.8}
+]
